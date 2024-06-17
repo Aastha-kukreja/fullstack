@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+                        
+        }
+        .container{
+            background-color: pink;
+            display: flex;
+            width: auto;
+            height: 100vh;
+            
+            
+        }
+        .left{
+            width: 20%;
+            height: 100%;
+            background: greenyellow;
+        }
+        .right{
+            width: 20%;
+            height: 100%;
+            background: greenyellow;
+        }
+        .center{
+            width: 60%;
+            height: 100%;
+            background: blueviolet;
+
+        }
+        .rupper{
+            background-color: green;
+            height: 30%;
+        }
+        .cupper{
+            background-color: orangered;
+            height: 30%;
+
+        }
+        .clower{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        .box{
+            background-color: rgb(177, 114, 37);
+            width: 200px;
+            margin: 10px; 
+            padding: 20px;
+            height: 200px;     
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            
+        </div>
+        <div class="center">
+            <div class="cupper"></div>
+            <div class="clower">
+                <div class="box" id="box1"></div>
+                <div class="box" id="box2"></div>
+                <div class="box" id="box3"></div>
+                <div class="box" id="box4"></div>
+                <div class="box" id="box5"></div>
+                <div class="box" id="box6"></div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="rupper"></div>
+            <div class="rlower"></div>
+        </div>
+    </div>
+</body>
+</html>

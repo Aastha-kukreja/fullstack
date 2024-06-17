@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+       }
+       .container-form{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(74, 121, 217);
+       }
+       .form-login{
+        max-width: 430px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 6px;
+        background: white;
+       }
+       .header{
+        font-size: 28px;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+        }
+    </style>
+</head>
+<body> 
+    <section class="container-form">
+    <div class="form-login">
+        <div class="form-content">
+            <header>Login</header>
+
+            <form action="#">
+                <div class="input-field">
+                    <input type="email" placeholder="Email" class="input">
+                 </div>
+                 <div class="input-field">
+                    <input type="password" placeholder="Passwaord" class="password">
+                 </div>
+                 <div class="form-link">
+                    <a href="#" class="forgot-pass">Forgot Password?</a>
+                 </div>
+                <div class="field-button">
+                    <button>Login</button>
+                </div> 
+                <div class="form-link">
+                    <span>Don't have an account?</span><a href="#" class="signup-link">Signup</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
