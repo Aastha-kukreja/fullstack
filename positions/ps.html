@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(224, 236, 112);
+            height: 200vh;
+        }
+        .box{
+            background-color: blueviolet;
+            margin: 5px;
+            height: 90px;
+            width: 90px;
+            display: inline-block;
+            font-size: 50px;
+            text-align: center;
+        }
+        #box-2{
+            background-color: aquamarine;
+            position: relative;
+            top: 600px;
+            left: 60px;
+        }
+        #box-5{
+            background-color: #dbd;
+            position:absolute;
+            top:10px;
+            right: 70px;
+        }
+        #box-6{
+            background-color: bisque;
+            position: fixed;
+            top: 70px;
+            right: 200px;
+        }
+        #box-7{
+            background-color: black;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box" id="box-2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box" id="box-5">5</div>
+        <div class="box" id="box-6">6</div>
+        <div class="box" id="box-7"></div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>
