@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile</title>
+    <style>
+     *{
+        font-family: Arial, sans-serif;
+        background-color: #dbdbdb;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-container {
+        width: 100vh
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-info {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.profile-info .username {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile-info .stats {
+    display: flex;
+    margin: 10px 0;
+}
+
+.profile-info .stats span {
+    margin-right: 20px;
+}
+
+.profile-info .bio {
+    margin: 0;
+}
+
+.highlights {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.highlight {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.highlight img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #dbdbdb;
+}
+
+.highlight span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #262626;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <header class="profile-header">
+            <div class="profile-image">
+                <img src="profile pic.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1 class="username">username</h1>
+                <div class="stats">
+                    <span><strong>100</strong> posts</span>
+                    <span><strong>200k</strong> followers</span>
+                    <span><strong>180</strong> following</span>
+                </div>
+                <p class="bio">
+                    This is the profile bio. <br>
+                    It can span multiple lines.
+                </p>
+            </div>
+        </header>
+        <div class="highlights">
+            <div class="highlight">
+                <img src="highlight1.jpg" alt="Highlight 1">
+                <span>Highlight 1</span>
+            </div>
+            <div class="highlight">
+                <img src="highlight2.jpg" alt="Highlight 2">
+                <span>Highlight 2</span>
+            </div>
+            <div class="highlight">
+                <img src="highlight3.jpg" alt="Highlight 3">
+                <span>Highlight 3</span>
+            </div>
+            <!-- Add more highlights as needed -->
+        </div>
+        <div class="gallery">
+            <!-- Gallery items -->
+            <div class="gallery-item"><img src="post1.jpg" alt="Post 1"></div>
+            <div class="gallery-item"><img src="post2.jpg" alt="Post 2"></div>
+            <div class="gallery-item"><img src="post3.jpg" alt="Post 3"></div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+</body>
+</html>
