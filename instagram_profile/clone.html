@@ -4,54 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-     *{
+  *{
         font-family: Arial, sans-serif;
-        background-color: #dbdbdb;
+        background-color: white;
         margin: 0;
         padding: 0;
+        
+        
     }
 
     .profile-container {
         width: 100vh
         margin: 0 auto;
-        padding: 20px;
+        padding: 0px;
+        display: flex;
     }
 
-.profile-header {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #dbdbdb;
-}
+    .profile-header {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+       
+    }
 
-.profile-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
+    .profile-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
 
-.profile-image img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
+    .profile-image img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
 
-.profile-info {
-    flex: 2;
-    padding-left: 20px;
-}
+    .profile-info {
+        flex: 2;
+        padding-left: 20px;
+        height: 200px;
+        
+    }
 
 .profile-info .username {
     font-size: 24px;
-    margin: 0;
+    margin-top: 0px;
+   
 }
 
 .profile-info .stats {
     display: flex;
-    margin: 10px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+.profile-info .edit{
+    display: flex;
+   
 
+}
+.button{
+    background-color: rgb(215, 214, 214); 
+                
+    color: black;              
+    padding: 8px 15px;        
+    text-align: center;        
+    text-decoration: none;    
+    display: inline-block;     
+    font-size: 16px;           
+    margin: 4px 2px;          
+    cursor: pointer;           
+    border-radius: 12px;  
+    margin-left: 30px;     
+    }
+}
+.profile-info .edit .span{
+    margin-right: 20px;
+
+}
 .profile-info .stats span {
     margin-right: 20px;
 }
@@ -64,7 +95,9 @@
     display: flex;
     overflow-x: auto;
     padding: 20px 0;
-    border-bottom: 1px solid #dbdbdb;
+    
+    margin-left: 20px;
+    border-bottom: 1px solid #9a9696;
 }
 
 .highlight {
@@ -76,14 +109,15 @@
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    border: 1px solid #dbdbdb;
+    border: 0.3px solid #6c6c6c;
+    margin: 20px;
 }
 
 .highlight span {
     display: block;
     margin-top: 5px;
     font-size: 14px;
-    color: #262626;
+    
 }
 
 .gallery {
@@ -101,49 +135,159 @@
     width: 100%;
     display: block;
 }
+.left{
+    width: 150px;
+}
+.right{
+    width: 80%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+.menu{
+    margin: 25px 0px;
+    font-size: 20px;
+    }
+.left{
+    border-right: 0.3px solid rgb(84, 84, 84);
+     width: 200px;
+     padding: 30px;
+    }
+.more{
+    margin: 100px 0px;
+    font-size: 20px;
+    }
+        .logo img{
+            width: 150px;
+            color: white;
+           
+
+        }
+        .menu ul li {
+            margin-top: 50px;
+            
+            margin: 40px 0px;
+            font-size: 15px;
+            list-style: none;
+
+            
+        }
+        .menu ul li span{
+            margin: 0px 5px;
+            font-size: ;
+        }
+        .more span {
+            margin: 0px 8px;
+           
+        }
+        .edit{
+            display: flex;
+            
+            
+
+        }
+
     </style>
 </head>
 <body>
     <div class="profile-container">
+        <div class="left">
+            <div class="logo">
+                <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span>Search</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-compass"></i></span>
+                        <span>Explore</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-video"></i></span>
+                        <span>Reels</span>
+    
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-message"></i></span>
+                        <span>Messages</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span>Notification</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-square-plus"></i></span>
+                        <span>Create</span>
+    
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <span>Profile</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="more">
+                <span class="icon"><i class="fa-solid fa-bars"></i></span>
+                <span>More</span>
+            </div>
+
+        </div>
+        <div class="right">
         <header class="profile-header">
             <div class="profile-image">
-                <img src="profile pic.jpg" alt="Profile Picture">
+                <img src="/images/profile.jpg" alt="Profile Picture">
             </div>
             <div class="profile-info">
-                <h1 class="username">username</h1>
+                <div class="edit">
+                <span><h1 class="username">aasthasaidso</h1></span>
+                <span class="button">Edit profile</span>
+                <span class="button">View archive</span>
+                
+                </div>
                 <div class="stats">
-                    <span><strong>100</strong> posts</span>
-                    <span><strong>200k</strong> followers</span>
+                    <span><strong>5</strong> posts</span>
+                    <span><strong>200</strong> followers</span>
                     <span><strong>180</strong> following</span>
                 </div>
                 <p class="bio">
-                    This is the profile bio. <br>
-                    It can span multiple lines.
+                    ~ That girl<br>
+                    
                 </p>
             </div>
         </header>
         <div class="highlights">
             <div class="highlight">
-                <img src="highlight1.jpg" alt="Highlight 1">
-                <span>Highlight 1</span>
+                <img src="/images/post1.jpg" alt="Highlight 1">
+                <span><3</span>
             </div>
             <div class="highlight">
-                <img src="highlight2.jpg" alt="Highlight 2">
-                <span>Highlight 2</span>
+                <img src="/images/post2.jpg" alt="Highlight 2">
+                <span><3</span>
             </div>
             <div class="highlight">
-                <img src="highlight3.jpg" alt="Highlight 3">
-                <span>Highlight 3</span>
+                <img src="/images/post3.jpg" alt="Highlight 3">
+                <span><3</span>
             </div>
-            <!-- Add more highlights as needed -->
+            
         </div>
         <div class="gallery">
-            <!-- Gallery items -->
-            <div class="gallery-item"><img src="post1.jpg" alt="Post 1"></div>
-            <div class="gallery-item"><img src="post2.jpg" alt="Post 2"></div>
-            <div class="gallery-item"><img src="post3.jpg" alt="Post 3"></div>
-            <!-- Add more gallery items as needed -->
+         
+            <div class="gallery-item"><img src="/images/post1.jpg" alt="Post 1"></div>
+            <div class="gallery-item"><img src="/images/post2.jpg" alt="Post 2"></div>
+            <div class="gallery-item"><img src="/images/post3.jpg" alt="Post 3"></div>
+            <div class="gallery-item"><img src="/images/post4.jpg" alt="Post 4"></div>
+            <div class="gallery-item"><img src="/images/post5.jpg" alt="Post 5"></div>
+           
         </div>
+        </div>
+        
     </div>
 </body>
 </html>
